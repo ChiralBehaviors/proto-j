@@ -20,11 +20,7 @@
 
 package com.chiralbehaviors.protoj.controller;
 
-import com.chiralbehaviors.protoj.model.Facet;
 import com.chiralbehaviors.protoj.model.WorkspaceResource;
-
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 
 /**
  * @author hhildebrand
@@ -32,8 +28,7 @@ import javafx.collections.ObservableList;
  */
 public class WorkspaceController {
 
-    private WorkspaceResource     workspace;
-    private ObservableList<Facet> facets = FXCollections.observableArrayList();
+    private WorkspaceResource workspace;
 
     public WorkspaceResource getWorkspace() {
         return workspace;

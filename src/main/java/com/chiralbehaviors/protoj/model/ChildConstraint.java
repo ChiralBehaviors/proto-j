@@ -20,6 +20,7 @@
 
 package com.chiralbehaviors.protoj.model;
 
+import javafx.beans.property.ObjectProperty;
 import javafx.beans.value.ObservableIntegerValue;
 
 /**
@@ -27,8 +28,24 @@ import javafx.beans.value.ObservableIntegerValue;
  *
  */
 public class ChildConstraint extends Named {
-    private ObservableIntegerValue cardinality;
-    private Facet                  child;
-    private Facet                  parent;
-    private Named                  relationship;
+    private ObservableIntegerValue       cardinality;
+    private ObjectProperty<Facet>        child;
+    private ObjectProperty<Facet>        parent;
+    private ObjectProperty<Relationship> relationship;
+
+    public ObservableIntegerValue cardinalityProperty() {
+        return cardinality;
+    }
+
+    public ObjectProperty<Facet> childProperty() {
+        return child;
+    }
+
+    public ObjectProperty<Facet> parentProperty() {
+        return parent;
+    }
+
+    public ObjectProperty<Relationship> relationshipProperty() {
+        return relationship;
+    }
 }

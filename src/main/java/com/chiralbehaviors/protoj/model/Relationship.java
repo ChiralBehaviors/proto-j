@@ -20,10 +20,16 @@
 
 package com.chiralbehaviors.protoj.model;
 
+import javafx.beans.property.ObjectProperty;
+
 /**
  * @author hhildebrand
  *
  */
 public class Relationship extends Existential {
-    private Relationship inverse;
+    private ObjectProperty<Relationship> inverse;
+
+    public ObjectProperty<Relationship> inverseProperty() {
+        return inverse;
+    }
 }

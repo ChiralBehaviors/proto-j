@@ -20,11 +20,21 @@
 
 package com.chiralbehaviors.protoj.model;
 
+import javafx.beans.property.ObjectProperty;
+
 /**
  * @author hhildebrand
  *
  */
 public class ClassifiedAttribute extends Idd {
-    private Attribute attribute;
-    private Object    defaultValue;
+    private ObjectProperty<Attribute> attribute;
+    private ObjectProperty<Object>    defaultValue;
+
+    public ObjectProperty<Attribute> attributeProperty() {
+        return attribute;
+    }
+
+    public ObjectProperty<Object> defaultValueProperty() {
+        return defaultValue;
+    }
 }

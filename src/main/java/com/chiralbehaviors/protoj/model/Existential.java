@@ -31,4 +31,8 @@ public abstract class Existential extends Named {
 
     private ObservableStringValue description = new SimpleStringProperty();
 
+    public ObservableStringValue descriptionProperty() {
+        return description;
+    }
+
 }

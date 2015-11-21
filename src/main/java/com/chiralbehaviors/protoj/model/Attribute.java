@@ -29,4 +29,8 @@ import javafx.beans.value.ObservableStringValue;
  */
 public class Attribute extends Existential {
     private ObservableStringValue valueType = new SimpleStringProperty();
+
+    public ObservableStringValue valueTypeProperty() {
+        return valueType;
+    }
 }

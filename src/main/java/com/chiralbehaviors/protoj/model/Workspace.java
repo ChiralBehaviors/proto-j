@@ -29,8 +29,12 @@ import javafx.collections.ObservableList;
  */
 public class Workspace {
 
-    private WorkspaceResource     workspace;
     private ObservableList<Facet> facets = FXCollections.observableArrayList();
+    private WorkspaceResource     workspace;
+
+    public ObservableList<Facet> facetsProperty() {
+        return facets;
+    }
 
     public WorkspaceResource getWorkspace() {
         return workspace;

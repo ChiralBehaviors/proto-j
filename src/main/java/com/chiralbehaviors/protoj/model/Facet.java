@@ -20,8 +20,6 @@
 
 package com.chiralbehaviors.protoj.model;
 
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.value.ObservableStringValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -30,7 +28,14 @@ import javafx.collections.ObservableList;
  *
  */
 public class Facet extends Named {
-    private ObservableStringValue               description = new SimpleStringProperty();
-    private ObservableList<ClassifiedAttribute> attributes  = FXCollections.observableArrayList();
-    private ObservableList<ChildConstraint>     children    = FXCollections.observableArrayList();
+    private ObservableList<ClassifiedAttribute> attributes = FXCollections.observableArrayList();
+    private ObservableList<ChildConstraint>     children   = FXCollections.observableArrayList();
+
+    public ObservableList<ClassifiedAttribute> attributesProperty() {
+        return attributes;
+    }
+
+    public ObservableList<ChildConstraint> childrenProperty() {
+        return children;
+    }
 }

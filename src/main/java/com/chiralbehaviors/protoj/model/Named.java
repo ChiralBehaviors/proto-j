@@ -31,4 +31,8 @@ public abstract class Named extends Idd {
 
     private ObservableStringValue name = new SimpleStringProperty();
 
+    public ObservableStringValue nameProperty() {
+        return name;
+    }
+
 }
