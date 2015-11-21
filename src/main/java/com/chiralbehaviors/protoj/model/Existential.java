@@ -27,7 +27,7 @@ import javafx.beans.value.ObservableStringValue;
  * @author hhildebrand
  *
  */
-public abstract class Existential extends Named {
+public class Existential extends Named {
 
     private ObservableStringValue description = new SimpleStringProperty();
 
