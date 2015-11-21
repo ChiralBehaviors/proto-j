@@ -17,7 +17,7 @@
  *  You should have received a copy of the GNU Affero General Public License
  *  along with Ultrastructure.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.chiralbehaviors.protoj.model;
+package com.chiralbehaviors.protoj.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

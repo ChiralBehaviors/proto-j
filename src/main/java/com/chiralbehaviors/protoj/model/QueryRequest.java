@@ -18,7 +18,7 @@
  *  along with Ultrastructure.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.chiralbehaviors.protoj.backend;
+package com.chiralbehaviors.protoj.model;
 
 import java.util.Collections;
 import java.util.HashMap;

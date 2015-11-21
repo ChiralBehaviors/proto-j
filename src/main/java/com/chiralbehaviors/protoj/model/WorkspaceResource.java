@@ -18,13 +18,11 @@
  *  along with Ultrastructure.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.chiralbehaviors.protoj.backend;
+package com.chiralbehaviors.protoj.model;
 
 import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 import java.util.Map;
 
-import javax.ws.rs.client.Client;
 import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
@@ -34,12 +32,10 @@ import javax.ws.rs.core.MediaType;
  *
  */
 public class WorkspaceResource {
-    private WebTarget webTarget;
+    private final WebTarget webTarget;
 
-    public WorkspaceResource(Client client,
-                             String workspaceURI) throws UnsupportedEncodingException {
-        webTarget = client.target("http://localhost:%s/graphql/workspace");
-        webTarget = webTarget.path(URLEncoder.encode(workspaceURI, "UTF-8"));
+    public WorkspaceResource(WebTarget webTarget) throws UnsupportedEncodingException {
+        this.webTarget = webTarget;
     }
 
     @SuppressWarnings("unchecked")
