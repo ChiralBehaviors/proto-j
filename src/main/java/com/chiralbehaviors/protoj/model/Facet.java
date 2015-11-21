@@ -29,8 +29,7 @@ import javafx.collections.ObservableList;
  * @author hhildebrand
  *
  */
-public class Facet extends Idd {
-    private ObservableStringValue               name        = new SimpleStringProperty();
+public class Facet extends Named {
     private ObservableStringValue               description = new SimpleStringProperty();
     private ObservableList<ClassifiedAttribute> attributes  = FXCollections.observableArrayList();
     private ObservableList<ChildConstraint>     children    = FXCollections.observableArrayList();
