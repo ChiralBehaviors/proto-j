@@ -20,6 +20,8 @@
 
 package com.chiralbehaviors.protoj.model;
 
+import java.util.UUID;
+
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ObservableStringValue;
 
@@ -29,6 +31,10 @@ import javafx.beans.value.ObservableStringValue;
  */
 public class Attribute extends Existential {
     private ObservableStringValue valueType = new SimpleStringProperty();
+
+    public Attribute(UUID id) {
+        super(id);
+    }
 
     public ObservableStringValue valueTypeProperty() {
         return valueType;

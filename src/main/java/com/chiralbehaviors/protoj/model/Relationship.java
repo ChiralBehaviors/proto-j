@@ -20,6 +20,8 @@
 
 package com.chiralbehaviors.protoj.model;
 
+import java.util.UUID;
+
 import javafx.beans.property.ObjectProperty;
 
 /**
@@ -28,6 +30,10 @@ import javafx.beans.property.ObjectProperty;
  */
 public class Relationship extends Existential {
     private ObjectProperty<Relationship> inverse;
+
+    public Relationship(UUID id) {
+        super(id);
+    }
 
     public ObjectProperty<Relationship> inverseProperty() {
         return inverse;

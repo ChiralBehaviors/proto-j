@@ -20,6 +20,8 @@
 
 package com.chiralbehaviors.protoj.model;
 
+import java.util.UUID;
+
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ObservableStringValue;
 
@@ -30,6 +32,10 @@ import javafx.beans.value.ObservableStringValue;
 public abstract class Named extends Idd {
 
     private ObservableStringValue name = new SimpleStringProperty();
+
+    public Named(UUID id) {
+        super(id);
+    }
 
     public ObservableStringValue nameProperty() {
         return name;

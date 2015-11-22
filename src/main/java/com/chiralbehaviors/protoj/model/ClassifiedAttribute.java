@@ -20,6 +20,8 @@
 
 package com.chiralbehaviors.protoj.model;
 
+import java.util.UUID;
+
 import javafx.beans.property.ObjectProperty;
 
 /**
@@ -28,7 +30,11 @@ import javafx.beans.property.ObjectProperty;
  */
 public class ClassifiedAttribute extends Idd {
     private ObjectProperty<Attribute> attribute;
+
     private ObjectProperty<Object>    defaultValue;
+    public ClassifiedAttribute(UUID id) {
+        super(id);
+    }
 
     public ObjectProperty<Attribute> attributeProperty() {
         return attribute;

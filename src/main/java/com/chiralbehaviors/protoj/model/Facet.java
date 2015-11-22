@@ -20,6 +20,8 @@
 
 package com.chiralbehaviors.protoj.model;
 
+import java.util.UUID;
+
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -29,7 +31,11 @@ import javafx.collections.ObservableList;
  */
 public class Facet extends Named {
     private ObservableList<ClassifiedAttribute> attributes = FXCollections.observableArrayList();
+
     private ObservableList<ChildConstraint>     children   = FXCollections.observableArrayList();
+    public Facet(UUID id) {
+        super(id);
+    }
 
     public ObservableList<ClassifiedAttribute> attributesProperty() {
         return attributes;

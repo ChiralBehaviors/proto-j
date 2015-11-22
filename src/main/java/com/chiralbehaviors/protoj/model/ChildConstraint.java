@@ -20,6 +20,8 @@
 
 package com.chiralbehaviors.protoj.model;
 
+import java.util.UUID;
+
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.value.ObservableIntegerValue;
 
@@ -29,9 +31,13 @@ import javafx.beans.value.ObservableIntegerValue;
  */
 public class ChildConstraint extends Named {
     private ObservableIntegerValue       cardinality;
+
     private ObjectProperty<Facet>        child;
     private ObjectProperty<Facet>        parent;
     private ObjectProperty<Relationship> relationship;
+    public ChildConstraint(UUID id) {
+        super(id);
+    }
 
     public ObservableIntegerValue cardinalityProperty() {
         return cardinality;
