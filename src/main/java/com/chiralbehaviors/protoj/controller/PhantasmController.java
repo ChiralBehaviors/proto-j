@@ -38,7 +38,7 @@ public class PhantasmController {
     private ChoiceBox<?>      classification;
 
     @FXML
-    private TableView<?>      facetAttributes;
+    private TableView<?>      phantasmAttributes;
 
     @FXML
     private TableColumn<?, ?> attribute;
@@ -50,7 +50,7 @@ public class PhantasmController {
     private TableView<?>      networkAttributes;
 
     @FXML
-    private TableView<?>      facetChildren;
+    private TableView<?>      children;
 
     @FXML
     private TableColumn<?, ?> cardinality;

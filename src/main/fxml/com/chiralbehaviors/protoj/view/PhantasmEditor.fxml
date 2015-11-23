@@ -48,7 +48,7 @@
                   </GridPane>
                   <AnchorPane GridPane.columnSpan="2147483647" GridPane.rowIndex="1">
                      <children>
-                        <TableView fx:id="facetAttributes" prefHeight="183.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <TableView fx:id="phantasmAttributes" prefHeight="183.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <columns>
                               <TableColumn fx:id="attribute" maxWidth="453.0" minWidth="-1.0" prefWidth="453.0" text="Attribute" />
                               <TableColumn fx:id="defaultValue" maxWidth="299.0" minWidth="-1.0" prefWidth="0.0" text="Default Value" />
@@ -108,7 +108,7 @@
                   </AnchorPane>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="2">
                      <children>
-                        <TableView fx:id="facetChildren" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <TableView fx:id="children" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <columns>
                               <TableColumn fx:id="cardinality" maxWidth="100.0" minWidth="80.0" prefWidth="100.0" text="Cardinality" />
                               <TableColumn fx:id="child" text="Child" />
