@@ -29,11 +29,11 @@ import javafx.collections.ObservableList;
  * @author hhildebrand
  *
  */
-public class Facet extends Named {
+public class Phantasm extends Named {
     private ObservableList<ClassifiedAttribute> attributes = FXCollections.observableArrayList();
 
     private ObservableList<ChildConstraint>     children   = FXCollections.observableArrayList();
-    public Facet(UUID id) {
+    public Phantasm(UUID id) {
         super(id);
     }
 

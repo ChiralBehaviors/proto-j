@@ -19,7 +19,7 @@ public class ProtoJ extends Application {
         this.primaryStage.setTitle("Ultrastructure IDE");
 
         initRootLayout();
-        showFacetEditor();
+        showPhantasmEditor();
     }
 
     public static void main(String[] args) {
@@ -30,10 +30,10 @@ public class ProtoJ extends Application {
         return primaryStage;
     }
 
-    public void showFacetEditor() {
+    public void showPhantasmEditor() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("view/FacetEditor.fxml"));
+            loader.setLocation(getClass().getResource("view/PhantasmEditor.fxml"));
             AnchorPane facetEditor = (AnchorPane) loader.load();
             rootLayout.setCenter(facetEditor);
         } catch (IOException e) {

@@ -29,10 +29,10 @@ import javafx.collections.ObservableList;
  */
 public class Workspace {
 
-    private ObservableList<Facet> facets = FXCollections.observableArrayList();
+    private ObservableList<Phantasm> facets = FXCollections.observableArrayList();
     private WorkspaceResource     workspace;
 
-    public ObservableList<Facet> facetsProperty() {
+    public ObservableList<Phantasm> facetsProperty() {
         return facets;
     }
 

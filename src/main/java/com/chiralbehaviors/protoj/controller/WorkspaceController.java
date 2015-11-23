@@ -37,5 +37,4 @@ public class WorkspaceController {
     public void setWorkspace(WorkspaceResource workspace) {
         this.workspace = workspace;
     }
-
 }

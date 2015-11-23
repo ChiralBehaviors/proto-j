@@ -31,10 +31,10 @@ import javafx.beans.value.ObservableIntegerValue;
  */
 public class ChildConstraint extends Named {
     private ObservableIntegerValue       cardinality;
-
-    private ObjectProperty<Facet>        child;
-    private ObjectProperty<Facet>        parent;
+    private ObjectProperty<Phantasm>        child;
+    private ObjectProperty<Phantasm>        parent;
     private ObjectProperty<Relationship> relationship;
+
     public ChildConstraint(UUID id) {
         super(id);
     }
@@ -43,11 +43,11 @@ public class ChildConstraint extends Named {
         return cardinality;
     }
 
-    public ObjectProperty<Facet> childProperty() {
+    public ObjectProperty<Phantasm> childProperty() {
         return child;
     }
 
-    public ObjectProperty<Facet> parentProperty() {
+    public ObjectProperty<Phantasm> parentProperty() {
         return parent;
     }
 
